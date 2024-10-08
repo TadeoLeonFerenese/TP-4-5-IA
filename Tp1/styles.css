@@ -1,0 +1,132 @@
+/* styles.css */
+
+/* Fuentes */
+body {
+  font-family: "Lora", serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #e1f5fe; /* fondo del main*/
+  color: #333;
+}
+
+.panel {
+  padding: 0 10px;
+  display: none; /* Oculto por defecto */
+  overflow: hidden;
+  background-color: #e1f5fe; /* Color del panel */
+  border-left: 3px solid #4a90e2; /* Línea a la izquierda */
+}
+
+/* Header */
+header {
+  background-color: #215086; /* Azul fuerte */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  color: #ffffff; /* Blanco */
+  font-size: 2.5em;
+}
+
+.logo-derecha {
+  max-width: 100px;
+  position: absolute;
+  right: 20px;
+  top: -5px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Aside */
+aside {
+  width: 15%;
+  height: 25%;
+  background-color: #215086; /* Azul fuerte */
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+aside h2 {
+  color: #ffffff; /* Azul marino */
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin: 10px 0;
+}
+
+aside a {
+  text-decoration: none;
+  color: #ffffff; /* Azul medio */
+  transition: color 0.3s;
+}
+
+aside a:hover {
+  color: #333; /* Azul marino al pasar el mouse */
+}
+
+/* Main */
+main {
+  flex: 1;
+}
+
+article {
+  /* background-color: #a2d9ce; Verde claro */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* border: 2px solid #009688; Verde más oscuro */
+}
+
+article h2,
+article h3,
+article h4 {
+  color: #333; /* Verde oscuro */
+}
+
+article p {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #215086; /* Azul fuerte */
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  position: relative;
+}
+
+.foo {
+  margin: 0;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* iframe */
+iframe {
+  border: 2px solid #007bb2; /* Azul fuerte */
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 870px; /* Mantener la proporción */
+}

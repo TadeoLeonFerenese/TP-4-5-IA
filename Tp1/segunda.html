@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inteligencia Artificial</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Red Neuronal Convolucional</h1>
+    <img src="img/Logo2.png" alt="Logo" class="logo-derecha">
+  </header>
+  <div class="container">
+    <aside>
+      <h2>Indice</h2>
+      <ul>
+        <li><a href="ejer1.html">Back-Propagation</a></li>
+        <li><a href="ejer2.html">Red Neuronal Convolucional</a></li>
+        
+    </aside>
+    <main>
+      <article>
+        <h2>Redes Neuronales Convolucionales (RNC)</h2>
+        <br />
+        <h3>¿Qué son las RNC?</h3>
+        <p>Las redes neuronales convolucionales (RNC), o Convolutional Neural Networks (CNN), son un tipo de red neuronal especialmente diseñada para procesar datos visuales. Su arquitectura se inspira en la organización del córtex visual en los seres humanos y otros animales. A continuación se detallan sus componentes y funcionamiento:
+          <br><br><b>Capas Convolucionales:</b> Estas capas son el núcleo de las RNC y su función principal es extraer características de las imágenes mediante filtros o kernels que se deslizan sobre los datos de entrada. Cada filtro detecta diferentes características como bordes o texturas.
+          <br><br><b>Capas de Pooling:</b> Estas capas reducen la dimensionalidad de las características extraídas, conservando solo las más importantes. Esto ayuda a prevenir el sobreajuste y mejora la eficiencia computacional. Existen diferentes tipos de pooling, como max-pooling y average pooling.
+          <br><br><b>Max-Pooling & Average-Pooling:</b> <br><br><b>Max Pooling:</b>
+          Toma el valor máximo de cada región del filtro (por ejemplo, un filtro de 2x2) y lo utiliza como representante de esa región.
+          Su fin es resaltar las características más importantes y dominantes, como bordes o texturas, ayudando a la red a enfocarse en las características más prominentes de la imagen.
+          Con esto, reduce la sensibilidad a pequeñas traslaciones y distorsiones en la imagen.
+          <br><b>Average Pooling:</b>
+          Calcula el promedio de los valores dentro de cada región del filtro.
+          y proporciona una representación suavizada de las características de la imagen, dando más importancia a la información global de cada región.
+          Gracias a esto reduce el impacto del ruido y conserva información contextual.
+          <br><br><b>Capas Completamente Conectadas:</b> En la parte final de la red, estas capas conectan todas las neuronas entre sí para realizar la clasificación final basándose en las características extraídas anteriormente.
+        </p>
+        <img width="560" height="400" src="https://www.diegocalvo.es/wp-content/uploads/2017/07/red-neuronal-convolucional-arquitectura.png" alt="Imagen 2">
+            
+      </article>
+      <article>
+        <br>
+        <h3>Funcionalidad y Aplicaciones</h3>
+        <p class="p1"><b>Extracción Automática de Características:</b> Las RNC pueden aprender automáticamente características relevantes sin intervención humana, lo que simplifica el desarrollo de modelos en visión por computadora.
+
+            <br><br><b>Jerarquía de Características:</b> Las RNC aprenden características en diferentes niveles de abstracción. Las primeras capas detectan patrones simples (bordes), mientras que las capas más profundas combinan estos patrones para identificar formas y objetos más complejos.
+            
+            <br><br><b>Robustez ante Variaciones:</b> Son robustas ante variaciones en los datos, como cambios en escala o rotación, gracias a su estructura y operaciones de convolución y pooling.
+            
+            <br><br> <b>Aplicaciones Comunes:</b>
+            <br><li>Reconocimiento de imágenes</li>
+            <br><li>Detección de objetos</li>
+            <br><li>Análisis de imágenes médicas</li>
+            <br><li>Reconocimiento facial</li>
+            <br><li>Sistemas de recomendación</li>
+            
+            
+
+            </p>
+            
+            <h4>Video para reforzar contenido</h4>
+            <iframe width="868" height="488" src="https://www.youtube.com/embed/FsTEgdEfK64" title="Redes Convolucionales: Qué son en 4 minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+    </main>
+  </div>
+  <footer>
+    <p>Derechos de autor © 2024 - Unab - Inteligencia Artificial</p>
+  </footer>
+</body>
+</html>
